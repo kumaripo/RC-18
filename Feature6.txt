@@ -2,7 +2,7 @@
 
 *** Test Cases ***
 TC1
-    [Documentation]    Provide valid credentials.
+    [Documentation]    Validate for valid credentials.
     [Tags]    fea_6    req_13
     Log    Open Login page
     ${Input ProjectName}=    Set Variable    'DamnEasy'
@@ -10,7 +10,7 @@ TC1
     Log    Submit Credentials
 
 TC2
-    [Documentation]    Compare two numbers.
+    [Documentation]    validate Comparison of two numbers
     [Tags]    fea_6    req_14
     Log    Compare two variables.
     ${ProdPrice1}=    Set Variable    ${45}

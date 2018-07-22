@@ -3,51 +3,61 @@ Library           GuessNum.py
 
 *** Test Cases ***
 TC1
+    [Documentation]    Convert given Celsius into Fahrenheit(i.e.:X=12)
     [Tags]    fea_4    req_9
     ${expect}    Celsius To Fahrenheit    12
     Should Be Equal As Numbers    ${expect}    53.6
 
 TC2
+    [Documentation]    Convert given Celsius into Fahrenheit(i.e.:X=60)
     [Tags]    fea_4    req_9
     ${expect}    Celsius To Fahrenheit    60
     Should Be Equal As Numbers    ${expect}    140.0
 
 TC3
+    [Documentation]    Convert given Celsius into Fahrenheit(i.e.:X=99)
     [Tags]    fea_4    req_9
     ${expect}    Celsius To Fahrenheit    99
     Should Be Equal As Numbers    ${expect}    210.2
 
 TC4
+    [Documentation]    Convert given Celsius into Fahrenheit(i.e.:X=99)
     [Tags]    fea_4    req_9    RC18-96
     ${expect}    Celsius To Fahrenheit    99
     Should Be Equal As Numbers    ${expect}    24
 
 TC5
+    [Documentation]    Convert given Celsius into Fahrenheit(i.e.:X=100)
     [Tags]    fea_4    req_9
     ${expect}    Celsius To Fahrenheit    100
     Should Be Equal As Numbers    ${expect}    212.0
 
 TC6
+    [Documentation]    Convert given kilometer to miles(i.e.:X=100)
     [Tags]    fea_4    req_10
     ${expect}    Kilometers To Miles    100
     Should Be Equal As Numbers    ${expect}    62.1371
 
 TC7
+    [Documentation]    Convert given kilometer to miles(i.e.:X=200)
     [Tags]    fea_4    req_10
     ${expect}    Kilometers To Miles    200
     Should Be Equal As Numbers    ${expect}    124.2742
 
 TC8
+    [Documentation]    Convert given kilometer to miles(i.e.:X=88)
     [Tags]    fea_4    req_10
     ${expect}    Kilometers To Miles    88
     Should Be Equal As Numbers    ${expect}    54.680648
 
 TC9
+    [Documentation]    Convert given kilometer to miles(i.e.:X=39)
     [Tags]    fea_4    req_10    RC18-96
     ${expect}    Kilometers To Miles    39
     Should Be Equal As Numbers    ${expect}    54.680648
 
 TC10
+    [Documentation]    Convert given kilometer to miles(i.e.:X=49)
     [Tags]    fea_4    req_10
     ${expect}    Kilometers To Miles    49
     Should Be Equal As Numbers    ${expect}    30.447179
