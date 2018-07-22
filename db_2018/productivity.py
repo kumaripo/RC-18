@@ -19,18 +19,25 @@ def parse_requirement_file():
         tempdict = {}
         li = first_sheet.row_values(r)
         if (li[0] != '' and li[1] != '' and li[2] != '' and li[3] != ''):
-            tempdict['release'] = li[0]
+            tempdict['release'] = str(li[3]).split(' ')[-1]
             tempdict['pbi_id'] = li[1]
-            tempdict['label'] = li[2]
-            tempdict['logged_hours'] = li[3]
-            tempdict['count'] = li[4]
-            tempdict['epic'] = li[5]
+            tempdict['label'] = li[5]
+            tempdict['logged_hours'] = li[15]
+
+            if li[5] == 'TC':
+                tempdict['count'] = li[10]
+            elif li[5] == 'TP':
+                tempdict['count'] = li[9]
+            else:
+                tempdict['count'] = "None"
+
+            tempdict['epic'] = li[6]
             data.append(tempdict)
     return data
 
 def main():
     rows = parse_requirement_file()
-    print rows
+    # print (rows)
     #if args.defect is True:
     add_productivity(rows)
 

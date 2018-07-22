@@ -19,20 +19,20 @@ def parse_requirement_file():
         tempdict = {}
         li = first_sheet.row_values(r)
         if (li[0] != '' and li[1] != '' and li[2] != '' and li[3] != ''):
-            tempdict['release'] = li [7]
-            tempdict['pbi_id'] = li[0]
-            tempdict['pbi_status'] = li[1]
-            tempdict['severity'] = li[2]
-            tempdict['priority'] = li[3]
-            tempdict['original_estimate'] = li[4]
-            tempdict['logged_estimate'] = li[5]
-            tempdict['issue_type'] = li[6]
+            tempdict['release'] = str(li[3]).split(' ')[-1]
+            tempdict['pbi_id'] = li[1]
+            tempdict['pbi_status'] = li[4]
+            tempdict['severity'] = li[7]
+            tempdict['priority'] = li[7]
+            tempdict['original_estimate'] = li[13]
+            tempdict['logged_estimate'] = li[15]
+            tempdict['issue_type'] = li[2]
             data.append(tempdict)
     return data
 
 def main():
     rows = parse_requirement_file()
-    print rows
+    print (rows)
     #if args.defect is True:
     add_pbi_summary(rows)
 
