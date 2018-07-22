@@ -3,61 +3,76 @@ Library           Calculate.py
 
 *** Test Cases ***
 TC1
+    [Tags]    fea_1    req_1
     ${expect}    Sum Func    2    3
     Should Be Equal As Integers    ${expect}    ${5}
 
 TC2
+    [Tags]    fea_1    req_1
     ${expect}    Sum Func    8    10
     Should Be Equal As Integers    ${expect}    ${18}
 
 TC3
+    [Tags]    fea_1    req_1
     ${expect}    Sum Func    3    20
     Should Be Equal As Integers    ${expect}    ${23}
 
 TC4
+    [Tags]    fea_1    req_1    def_1
     ${expect}    Sum Func    3    20
     Should Be Equal As Integers    ${expect}    ${20}
 
 TC5
+    [Tags]    fea_1    req_1
     ${expect}    Sum Func    20    20
     Should Be Equal As Integers    ${expect}    ${40}
 
 TC6
+    [Tags]    fea_1    req_2
     ${expect}    Mult Func    4    5
     Should Be Equal As Integers    ${expect}    ${20}
 
 TC7
+    [Tags]    fea_1    req_2
     ${expect}    Mult Func    3    4
     Should Be Equal As Integers    ${expect}    ${12}
 
 TC8
+    [Tags]    fea_1    req_2
     ${expect}    Mult Func    5    5
     Should Be Equal As Integers    ${expect}    ${25}
 
 TC9
+    [Tags]    fea_1    req_2    def_2
     ${expect}    Mult Func    5    6
     Should Be Equal As Integers    ${expect}    ${25}
 
 TC10
+    [Tags]    fea_1    req_2
     ${expect}    Mult Func    6    6
     Should Be Equal As Integers    ${expect}    ${36}
 
 TC11
+    [Tags]    fea_1    req_3
     ${expect}    Cnct Func    din    esh
     Should Be Equal As Strings    ${expect}    dinesh
 
 TC12
+    [Tags]    fea_1    req_3
     ${expect}    Cnct Func    shu    bham
     Should Be Equal As Strings    ${expect}    shubham
 
 TC13
+    [Tags]    fea_1    req_3
     ${expect}    Cnct Func    shi    vam
     Should Be Equal As Strings    ${expect}    shivam
 
 TC14
+    [Tags]    fea_1    req_3
     ${expect}    Cnct Func    lax    mi
     Should Be Equal As Strings    ${expect}    lakshami
 
 TC15
+    [Tags]    fea_1    req_3
     ${expect}    Cnct Func    kus    hal
     Should Be Equal As Strings    ${expect}    kushal

@@ -3,61 +3,76 @@ Library           Numbers.py
 
 *** Test Cases ***
 TC1
+    [Tags]    fea_2    req_1
     ${expect}    Positive Or Negative Func    1
     Should Be Equal As Strings    ${expect}    Positive number
 
 TC2
+    [Tags]    fea_2    req_1
     ${expect}    Positive Or Negative Func    0
     Should Be Equal As Strings    ${expect}    Zero
 
 TC3
+    [Tags]    fea_2    req_1
     ${expect}    Positive Or Negative Func    -23
     Should Be Equal As Strings    ${expect}    Negative number
 
 TC4
+    [Tags]    fea_2    req_1
     ${expect}    Positive Or Negative Func    -10
     Should Be Equal As Strings    ${expect}    Positive number
 
 TC5
+    [Tags]    fea_2    req_1
     ${expect}    Positive Or Negative Func    -30
     Should Be Equal As Strings    ${expect}    Negative number
 
 TC6
+    [Tags]    fea_2    req_2
     ${expect}    Odd Even Func    10
     Should Be Equal As Strings    ${expect}    Even
 
 TC7
+    [Tags]    fea_2    req_2
     ${expect}    Odd Even Func    11
     Should Be Equal As Strings    ${expect}    Odd
 
 TC8
+    [Tags]    fea_2    req_2
     ${expect}    Odd Even Func    20
     Should Be Equal As Strings    ${expect}    Even
 
 TC9
+    [Tags]    fea_2    req_2
     ${expect}    Odd Even Func    11
     Should Be Equal As Strings    ${expect}    Even
 
 TC10
+    [Tags]    fea_2    req_2
     ${expect}    Odd Even Func    23
     Should Be Equal As Strings    ${expect}    Odd
 
 TC11
+    [Tags]    fea_2    req_3
     ${expect}    Prime Num    22
     Should Be Equal As Strings    ${expect}    it is not a prime number
 
 TC12
+    [Tags]    fea_2    req_3
     ${expect}    Prime Num    23
     Should Be Equal As Strings    ${expect}    it is a prime number
 
 TC13
+    [Tags]    fea_2    req_3
     ${expect}    Prime Num    10
     Should Be Equal As Strings    ${expect}    it is not a prime number
 
 TC14
+    [Tags]    fea_2    req_3
     ${expect}    Prime Num    19
     Should Be Equal As Strings    ${expect}    it is not a prime number
 
 TC15
+    [Tags]    fea_2    req_3
     ${expect}    Prime Num    41
     Should Be Equal As Strings    ${expect}    it is a prime number
