@@ -1,3 +1,10 @@
+*** Settings ***
+Library           GuessNum.py
+Library           Numbers.py
+Library           PyFeature.py
+Library           sample.py
+Library           Calculate.py
+
 *** Test Cases ***
 TC1
     [Documentation]    Provide valid credentials.

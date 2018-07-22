@@ -1,0 +1,39 @@
+*** Settings ***
+Library           PyFeature.py
+
+*** Test Cases ***
+TC1
+    ${country_name}    Create List    India    Australia
+    ${expect}    List Func    ${country_name}
+    ${country_name}    Create List    India    Australia    Brazil
+    Should Be Equal    ${expect}    ${country_name}
+
+TC2
+    ${country_name}    Create List    India    Bhutan
+    ${expect}    List Func    ${country_name}
+    ${country_name}    Create List    India    Bhutan    Brazil
+    Should Be Equal    ${expect}    ${country_name}
+
+TC3
+    ${country_name}    Create List    India    Pakistan
+    ${expect}    List Func    ${country_name}
+    ${country_name}    Create List    India    Pakistan    Brazil
+    Should Be Equal    ${expect}    ${country_name}
+
+TC4
+    ${country_name}    Create List    India    ABCD
+    ${expect}    List Func    ${country_name}
+    ${country_name}    Create List    India    Australia    Brazil
+    Should Be Equal    ${expect}    ${country_name}
+
+TC5
+    ${country_name}    Create List    India    Japan
+    ${expect}    List Func    ${country_name}
+    ${country_name}    Create List    India    Japan    Brazil
+    Should Be Equal    ${expect}    ${country_name}
+
+TC6
+    ${country_name}    Create List    India    China
+    ${expect}    List Func    ${country_name}
+    ${country_name}    Create List    India    Japan    Brazil
+    Should Be Equal    ${expect}    ${country_name}

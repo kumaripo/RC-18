@@ -1,0 +1,43 @@
+*** Settings ***
+Library           GuessNum.py
+
+*** Test Cases ***
+TC1
+    ${expect}    Celsius To Fahrenheit    12
+    Should Be Equal As Numbers    ${expect}    53.6
+
+TC2
+    ${expect}    Celsius To Fahrenheit    60
+    Should Be Equal As Numbers    ${expect}    140.0
+
+TC3
+    ${expect}    Celsius To Fahrenheit    99
+    Should Be Equal As Numbers    ${expect}    210.2
+
+TC4
+    ${expect}    Celsius To Fahrenheit    99
+    Should Be Equal As Numbers    ${expect}    40.6
+
+TC5
+    ${expect}    Celsius To Fahrenheit    100
+    Should Be Equal As Numbers    ${expect}    212.0
+
+TC6
+    ${expect}    Kilometers To Miles    100
+    Should Be Equal As Numbers    ${expect}    62.1371
+
+TC7
+    ${expect}    Kilometers To Miles    200
+    Should Be Equal As Numbers    ${expect}    124.2742
+
+TC8
+    ${expect}    Kilometers To Miles    88
+    Should Be Equal As Numbers    ${expect}    54.680648
+
+TC9
+    ${expect}    Kilometers To Miles    39
+    Should Be Equal As Numbers    ${expect}    54.680648
+
+TC10
+    ${expect}    Kilometers To Miles    49
+    Should Be Equal As Numbers    ${expect}    30.447179
