@@ -23,11 +23,13 @@ ws.cell(row=1,column = 14).value = 'Estimated Time'
 ws.cell(row=1,column = 15).value = 'Remaining TIme'
 ws.cell(row=1,column = 16).value = 'Time Spent'
 rowIndex = 2
-
-
+counter = 1
 options = {'server': 'http://172.27.39.6:8071', 'verify':False}
 jira = JIRA(options, basic_auth=('dineshvijay.9140', 'indrani@9140'))
 user = ['project=RadisysCodeathon2k18 AND reporter=dineshvijay.9140','project=RadisysCodeathon2k18 AND reporter=abdulla']
+print("#############################")
+print("Generating Excel of Jira Dump")
+print("#############################")
 for p in user:
     issues_in_project = jira.search_issues(p)
     for value in issues_in_project:
@@ -103,7 +105,12 @@ for p in user:
         ws.cell(row=rowIndex, column=15).value = rem_time
         ws.cell(row=rowIndex, column=16).value = time_spent
         rowIndex = rowIndex + 1
+        print("Adding Info of PBI No. : "+str(counter))
+        counter = counter+1
 wb.save('Jira_Details.xlsx')
+print("############################")
+print("Excel Generated Successfully")
+print("#############################")
 
 
 
