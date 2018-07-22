@@ -18,7 +18,7 @@ TC3
     Should Be Equal As Integers    ${expect}    ${23}
 
 TC4
-    [Tags]    fea_1    req_1    def_1
+    [Tags]    fea_1    req_1    RC18-90
     ${expect}    Sum Func    3    20
     Should Be Equal As Integers    ${expect}    ${20}
 
@@ -43,7 +43,7 @@ TC8
     Should Be Equal As Integers    ${expect}    ${25}
 
 TC9
-    [Tags]    fea_1    req_2    def_2
+    [Tags]    fea_1    req_2    RC18-91
     ${expect}    Mult Func    5    6
     Should Be Equal As Integers    ${expect}    ${25}
 
@@ -68,7 +68,7 @@ TC13
     Should Be Equal As Strings    ${expect}    shivam
 
 TC14
-    [Tags]    fea_1    req_3
+    [Tags]    fea_1    req_3    RC18-92
     ${expect}    Cnct Func    lax    mi
     Should Be Equal As Strings    ${expect}    lakshami
 

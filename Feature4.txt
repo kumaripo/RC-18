@@ -3,51 +3,51 @@ Library           GuessNum.py
 
 *** Test Cases ***
 TC1
-    [Tags]    fea_4    req_1
+    [Tags]    fea_4    req_9
     ${expect}    Celsius To Fahrenheit    12
     Should Be Equal As Numbers    ${expect}    53.6
 
 TC2
-    [Tags]    fea_4    req_1
+    [Tags]    fea_4    req_9
     ${expect}    Celsius To Fahrenheit    60
     Should Be Equal As Numbers    ${expect}    140.0
 
 TC3
-    [Tags]    fea_4    req_1
+    [Tags]    fea_4    req_9
     ${expect}    Celsius To Fahrenheit    99
     Should Be Equal As Numbers    ${expect}    210.2
 
 TC4
-    [Tags]    fea_4    req_1
+    [Tags]    fea_4    req_9    RC18-96
     ${expect}    Celsius To Fahrenheit    99
-    Should Be Equal As Numbers    ${expect}    40.6
+    Should Be Equal As Numbers    ${expect}    24
 
 TC5
-    [Tags]    fea_4    req_1
+    [Tags]    fea_4    req_9
     ${expect}    Celsius To Fahrenheit    100
     Should Be Equal As Numbers    ${expect}    212.0
 
 TC6
-    [Tags]    fea_4    req_2
+    [Tags]    fea_4    req_10
     ${expect}    Kilometers To Miles    100
     Should Be Equal As Numbers    ${expect}    62.1371
 
 TC7
-    [Tags]    fea_4    req_2
+    [Tags]    fea_4    req_10
     ${expect}    Kilometers To Miles    200
     Should Be Equal As Numbers    ${expect}    124.2742
 
 TC8
-    [Tags]    fea_4    req_2
+    [Tags]    fea_4    req_10
     ${expect}    Kilometers To Miles    88
     Should Be Equal As Numbers    ${expect}    54.680648
 
 TC9
-    [Tags]    fea_4    req_2
+    [Tags]    fea_4    req_10    RC18-96
     ${expect}    Kilometers To Miles    39
     Should Be Equal As Numbers    ${expect}    54.680648
 
 TC10
-    [Tags]    fea_4    req_2
+    [Tags]    fea_4    req_10
     ${expect}    Kilometers To Miles    49
     Should Be Equal As Numbers    ${expect}    30.447179

@@ -3,71 +3,71 @@ Library           PyFeature.py
 
 *** Test Cases ***
 TC1
-    [Tags]    fea_3    req_1
+    [Tags]    fea_3    req_7
     ${country_name}    Create List    India    Australia
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Australia    Brazil
     Should Be Equal    ${expect}    ${country_name}
 
 TC2
-    [Tags]    fea_3    req_1
+    [Tags]    fea_3    req_7
     ${country_name}    Create List    India    Bhutan
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Bhutan    Brazil
     Should Be Equal    ${expect}    ${country_name}
 
 TC3
-    [Tags]    fea_3    req_1
+    [Tags]    fea_3    req_7
     ${country_name}    Create List    India    Pakistan
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Pakistan    Brazil
     Should Be Equal    ${expect}    ${country_name}
 
 TC4
-    [Tags]    fea_3    req_1
+    [Tags]    fea_3    req_7    RC18-94
     ${country_name}    Create List    India    ABCD
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Australia    Brazil
     Should Be Equal    ${expect}    ${country_name}
 
 TC5
-    [Tags]    fea_3    req_1
+    [Tags]    fea_3    req_7
     ${country_name}    Create List    India    Japan
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Japan    Brazil
     Should Be Equal    ${expect}    ${country_name}
 
 TC6
-    [Tags]    fea_3    req_1
+    [Tags]    fea_3    req_8
     ${country_name}    Create List    India    China
     ${expect}    List Func    ${country_name}
-    ${country_name}    Create List    India    Japan    Brazil
+    ${country_name}    Create List    India    China    Brazil
     Should Be Equal    ${expect}    ${country_name}
 
 TC7
-    [Tags]    fea_3    req_1
+    [Tags]    fea_3    req_8
     ${country_name}    Create List    India    Barmuda
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Barmuda    Brazil
     Should Be Equal    ${expect}    ${country_name}
 
 TC8
-    [Tags]    fea_3    req_1
+    [Tags]    fea_3    req_8    RC18-94
     ${country_name}    Create List    India    Afgan
     ${expect}    List Func    ${country_name}
-    ${country_name}    Create List    India    Afgan    Brazil
+    ${country_name}    Create List    India    ABCDESFG    Brazil
     Should Be Equal    ${expect}    ${country_name}
 
 TC9
-    [Tags]    fea_3    req_1
+    [Tags]    fea_3    req_8
     ${country_name}    Create List    India    England
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    England    Brazil
     Should Be Equal    ${expect}    ${country_name}
 
 TC10
-    [Tags]    fea_3    req_1
+    [Tags]    fea_3    req_8
     ${country_name}    Create List    India    Croetia
     ${expect}    List Func    ${country_name}
-    ${country_name}    Create List    India    Japan    Brazil
+    ${country_name}    Create List    India    Croetia    Brazil
     Should Be Equal    ${expect}    ${country_name}
