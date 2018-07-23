@@ -54,6 +54,7 @@ def add_pbi_summary(rows):
         pbi_id, total_pass, total_fail, sprint, config\n
         argument to this method should be list of dictionaries with each dictionary having column names as the keys\n"""
     global engine
+    engine.execute(PBISummary.__table__.delete())
     engine.execute(PBISummary.__table__.insert(), rows)
 
 def add_productivity(rows):
@@ -61,6 +62,7 @@ def add_productivity(rows):
         pbi_id, total_pass, total_fail, sprint, config\n
         argument to this method should be list of dictionaries with each dictionary having column names as the keys\n"""
     global engine
+    engine.execute(Productivity.__table__.delete())
     engine.execute(Productivity.__table__.insert(), rows)
 
 
