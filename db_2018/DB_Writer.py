@@ -26,6 +26,7 @@ def add_requirements(rows):
         requirement_id, sprint, category\n
         argument to this method should be list of dictionaries with each dictionary having column names as the keys\n"""
     global engine
+    engine.execute(Requirement_Summary.__table__.delete())
     engine.execute(Requirement_Summary.__table__.insert(), rows)
 
 
