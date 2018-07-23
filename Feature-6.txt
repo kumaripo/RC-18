@@ -1,0 +1,78 @@
+*** Settings ***
+
+*** Test Cases ***
+TC1
+    [Documentation]    Validate for valid credentials.
+    [Tags]    Feature-6    req_13
+    Log    Open Login page
+    ${Input ProjectName}=    Set Variable    'DamnEasy'
+    ${Input Password}=    Set Variable    '*******'
+    Log    Submit Credentials
+
+TC2
+    [Documentation]    validate Comparison of two numbers
+    [Tags]    Feature-6    req_14
+    Log    Compare two variables.
+    ${ProdPrice1}=    Set Variable    ${45}
+    ${ProdPrice2}=    Set Variable    ${45.0}
+    Should Be Equal    ${ProdPrice1}    ${45}
+    Should Be Equal As Integers    ${ProdPrice2}    ${45.0}
+
+TC3
+    [Documentation]    Print Provide valid credentials and login page should open
+    [Tags]    Feature-6    req_13
+    Log    Login page is open
+    Log    when valid username and password are inserted.
+    Log    Credentials are submitted.
+
+TC4
+    [Documentation]    Print data of damneasy idea.
+    [Tags]    Feature-6    req_13
+    Log    Valid login for Damn easy
+    Log    Browser is opened to login page
+    Log    User "demo" logs in with password "mode"
+    Log    Welcome page should be open
+
+TC5
+    [Documentation]    Print User can change the password
+    [Tags]    Feature-6    req_13
+    Log    User can change password
+    Log    A User has a valid account
+    Log    when she changes her password
+    Log    She can log in with the new password
+    Log    She cannot use the old password anymore.
+
+TC6
+    [Documentation]    print Invalid password.
+    [Tags]    Feature-6    req_14
+    Log    Creating user with invalid password should fail
+    ${PWD INVALID LENGTH}=    Set Variable    abcd5
+    Should Be Equal    abcd5    ${PWD INVALID LENGTH}
+
+TC7
+    [Documentation]    length shoul be equal
+    [Tags]    Feature-6    req_14
+    Log    Creating user with invalid password should fail
+    ${PWD INVALID LENGTH}=    Set Variable    asdamneasy
+    Should Be Equal    asdamneasy    ${PWD INVALID LENGTH}    True
+
+TC8
+    [Documentation]    string should be equal
+    [Tags]    Feature-6    req_14
+    Log    Creating user with invalid password should fail
+    ${PWD INVALID LENGTH}=    Set Variable    'abcd5'
+    Should Be Equal As Strings    'abcd5'    ${PWD INVALID LENGTH}    True
+
+TC9
+    [Documentation]    string should be equal
+    [Tags]    Feature-6    req_14
+    Log    Creating user with invalid password should fail
+    ${PWD INVALID LENGTH}=    Set Variable    'abcd5'
+    Should Be Equal As Strings    'abcd5'    ${PWD INVALID LENGTH}    True
+
+TC10
+    [Documentation]    string should be equal
+    [Tags]    Feature-6    req_14    RC18-97
+    Log    Creating user with invalid password should fail
+    ${PWD INVALID LENGTH}=    Set Variable    'abcd5abcd'
+    Should Be Equal As Strings    'abcd5'    ${PWD INVALID LENGTH}
