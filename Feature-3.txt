@@ -20,7 +20,7 @@ TC2
 
 TC3
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,Pakistan])
-    [Tags]    Feature-3    req_7
+    [Tags]    Feature-3    req_8
     ${country_name}    Create List    India    Pakistan
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Pakistan    Brazil

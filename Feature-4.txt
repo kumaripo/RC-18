@@ -46,7 +46,7 @@ TC7
 
 TC8
     [Documentation]    Convert given kilometer to miles(i.e.:X=88)
-    [Tags]    Feature-4    req_10
+    [Tags]    Feature-4    req_9
     ${expect}    Kilometers To Miles    88
     Should Be Equal As Numbers    ${expect}    54.680648
 

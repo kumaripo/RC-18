@@ -46,7 +46,7 @@ TC7
 
 TC8
     [Documentation]    validate given number's Factorial is corect or not.(i.e: X=0)
-    [Tags]    Feature-5    req_12
+    [Tags]    Feature-5    req_11
     ${expect}    Facto    0
     Should Be Equal As Strings    ${expect}    The factorial of 0 is 1
 

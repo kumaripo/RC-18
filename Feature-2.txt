@@ -10,7 +10,7 @@ TC1
 
 TC2
     [Documentation]    A integer is possitive or negative(i.e.:X=0)
-    [Tags]    Feature-2    req_4
+    [Tags]    Feature-2    req_5
     ${expect}    Positive Or Negative Func    0
     Should Be Equal As Strings    ${expect}    Zero
 
@@ -76,7 +76,7 @@ TC12
 
 TC13
     [Documentation]    Validate a number is prime or not(i.e.: X=10)
-    [Tags]    Feature-2    req_6
+    [Tags]    Feature-2    RC18-93    req_5
     ${expect}    Prime Num    10
     Should Be Equal As Strings    ${expect}    it is a not prime number
 
