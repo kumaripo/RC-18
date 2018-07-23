@@ -39,8 +39,8 @@ def add_requirements_stats(rows):
     print (rows)
     id_select = select([Requirement_Summary.__table__.c.requirement_id]).where(Requirement_Summary.__table__.c.requirement_id == bindparam('req_id'))
     insert = Requirement_Stats.__table__.insert({'requirement_id': id_select})
-    print('Hi ',insert)
     engine.execute(insert, rows)
+
 
 def add_defect_stats(rows):
     """Method to populate defect statistics table having following columns\n
@@ -83,6 +83,7 @@ def add_code_coverage(rows):
         release, config, line_coverage, func_coverage\n
         argument to this method should be list of dictionaries with each dictionary having column names as the keys\n"""
     global engine
+    engine.execute(CodeCoverage.__table__.delete())
     engine.execute(CodeCoverage.__table__.insert(), rows)
 
 def add_sloc(rows):
