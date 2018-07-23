@@ -4,7 +4,7 @@ Library           PyFeature.py
 *** Test Cases ***
 TC1
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,Australia])
-    [Tags]    fea_3    req_7
+    [Tags]    Feature-3    req_7
     ${country_name}    Create List    India    Australia
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Australia    Brazil
@@ -12,7 +12,7 @@ TC1
 
 TC2
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,Bhutan])
-    [Tags]    fea_3    req_7
+    [Tags]    Feature-3    req_7
     ${country_name}    Create List    India    Bhutan
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Bhutan    Brazil
@@ -20,7 +20,7 @@ TC2
 
 TC3
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,Pakistan])
-    [Tags]    fea_3    req_7
+    [Tags]    Feature-3    req_7
     ${country_name}    Create List    India    Pakistan
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Pakistan    Brazil
@@ -28,7 +28,7 @@ TC3
 
 TC4
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,ABCD])
-    [Tags]    fea_3    req_7    RC18-94
+    [Tags]    Feature-3    req_7    RC18-94
     ${country_name}    Create List    India    ABCD
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Australia    Brazil
@@ -36,7 +36,7 @@ TC4
 
 TC5
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,japan])
-    [Tags]    fea_3    req_7
+    [Tags]    Feature-3    req_7
     ${country_name}    Create List    India    Japan
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Japan    Brazil
@@ -44,7 +44,7 @@ TC5
 
 TC6
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,China])
-    [Tags]    fea_3    req_8
+    [Tags]    Feature-3    req_8
     ${country_name}    Create List    India    China
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    China    Brazil
@@ -52,7 +52,7 @@ TC6
 
 TC7
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,Barmuda])
-    [Tags]    fea_3    req_8
+    [Tags]    Feature-3    req_8
     ${country_name}    Create List    India    Barmuda
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Barmuda    Brazil
@@ -60,7 +60,7 @@ TC7
 
 TC8
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,Afgan])
-    [Tags]    fea_3    req_8    RC18-94
+    [Tags]    Feature-3    req_8    RC18-94
     ${country_name}    Create List    India    Afgan
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    ABCDESFG    Brazil
@@ -68,7 +68,7 @@ TC8
 
 TC9
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,England])
-    [Tags]    fea_3    req_8
+    [Tags]    Feature-3    req_8
     ${country_name}    Create List    India    England
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    England    Brazil
@@ -76,7 +76,7 @@ TC9
 
 TC10
     [Documentation]    To validate wheter "Brazil" is appended in given list or not.(i.e. list=[India,Croatia])
-    [Tags]    fea_3    req_8
+    [Tags]    Feature-3    req_8
     ${country_name}    Create List    India    Croatia
     ${expect}    List Func    ${country_name}
     ${country_name}    Create List    India    Croatia    Brazil

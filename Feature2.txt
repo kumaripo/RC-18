@@ -4,90 +4,90 @@ Library           Numbers.py
 *** Test Cases ***
 TC1
     [Documentation]    A integer is possitive or negative(i.e.:X=1)
-    [Tags]    fea_2    req_4
+    [Tags]    Feature-2    req_4
     ${expect}    Positive Or Negative Func    1
     Should Be Equal As Strings    ${expect}    Positive number
 
 TC2
     [Documentation]    A integer is possitive or negative(i.e.:X=0)
-    [Tags]    fea_2    req_4
+    [Tags]    Feature-2    req_4
     ${expect}    Positive Or Negative Func    0
     Should Be Equal As Strings    ${expect}    Zero
 
 TC3
     [Documentation]    A integer is possitive or negative(i.e.:X=-23)
-    [Tags]    fea_2    req_4
+    [Tags]    Feature-2    req_4
     ${expect}    Positive Or Negative Func    -23
     Should Be Equal As Strings    ${expect}    Negative number
 
 TC4
     [Documentation]    A integer is possitive or negative(i.e.:X=-10)
-    [Tags]    fea_2    req_4    RC18-93
+    [Tags]    Feature-2    req_4    RC18-93
     ${expect}    Positive Or Negative Func    -10
     Should Be Equal As Strings    ${expect}    Positive number
 
 TC5
     [Documentation]    A integer is possitive or negative(i.e.:X=-30)
-    [Tags]    fea_2    req_4
+    [Tags]    Feature-2    req_4
     ${expect}    Positive Or Negative Func    -30
     Should Be Equal As Strings    ${expect}    Negative number
 
 TC6
     [Documentation]    A integer is Odd or Even(i.e.:X=10)
-    [Tags]    fea_2    req_5
+    [Tags]    Feature-2    req_5
     ${expect}    Odd Even Func    10
     Should Be Equal As Strings    ${expect}    Even
 
 TC7
     [Documentation]    A integer is possitive or negative(i.e.:X=11)
-    [Tags]    fea_2    req_5
+    [Tags]    Feature-2    req_5
     ${expect}    Odd Even Func    11
     Should Be Equal As Strings    ${expect}    Odd
 
 TC8
     [Documentation]    A integer is possitive or negative(i.e.:X=20)
-    [Tags]    fea_2    req_5
+    [Tags]    Feature-2    req_5
     ${expect}    Odd Even Func    20
     Should Be Equal As Strings    ${expect}    Even
 
 TC9
     [Documentation]    A integer is possitive or negative(i.e.:X=11)
-    [Tags]    fea_2    req_5    RC18-93
+    [Tags]    Feature-2    req_5    RC18-93
     ${expect}    Odd Even Func    11
     Should Be Equal As Strings    ${expect}    Even
 
 TC10
     [Documentation]    A integer is possitive or negative(i.e.:X=23)
-    [Tags]    fea_2    req_5
+    [Tags]    Feature-2    req_5
     ${expect}    Odd Even Func    23
     Should Be Equal As Strings    ${expect}    Odd
 
 TC11
     [Documentation]    Validate a number is prime or not(i.e.: X=22)
-    [Tags]    fea_2    req_6
+    [Tags]    Feature-2    req_6
     ${expect}    Prime Num    22
     Should Be Equal As Strings    ${expect}    it is not a prime number
 
 TC12
     [Documentation]    Validate a number is prime or not(i.e.: X=23)
-    [Tags]    fea_2    req_6
+    [Tags]    Feature-2    req_6
     ${expect}    Prime Num    23
     Should Be Equal As Strings    ${expect}    it is a prime number
 
 TC13
     [Documentation]    Validate a number is prime or not(i.e.: X=10)
-    [Tags]    fea_2    req_6
+    [Tags]    Feature-2    req_6
     ${expect}    Prime Num    10
     Should Be Equal As Strings    ${expect}    it is not a prime number
 
 TC14
     [Documentation]    Validate a number is prime or not(i.e.: X=19)
-    [Tags]    fea_2    req_6    RC18-93
+    [Tags]    Feature-2    req_6    RC18-93
     ${expect}    Prime Num    19
     Should Be Equal As Strings    ${expect}    it is not a prime number
 
 TC15
     [Documentation]    Validate a number is prime or not(i.e.: X=41)
-    [Tags]    fea_2    req_6
+    [Tags]    Feature-2    req_6
     ${expect}    Prime Num    41
     Should Be Equal As Strings    ${expect}    it is a prime number

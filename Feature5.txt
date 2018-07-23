@@ -4,60 +4,60 @@ Library           Factorial.py
 *** Test Cases ***
 TC1
     [Documentation]    validate given name is appending after string "Hello RC18, this is ____".(i.e: X=Shubham)
-    [Tags]    fea_5    req_11
+    [Tags]    Feature-5    req_11
     ${expect}    Func Name    Shubham
     Should Be Equal As Strings    ${expect}    Hello RC18, This is Shubham
 
 TC2
     [Documentation]    validate given name is appending after string "Hello RC18, this is ____".(i.e: X=Kushal)
-    [Tags]    fea_5    req_11
+    [Tags]    Feature-5    req_11
     ${expect}    Func Name    Kushal
     Should Be Equal As Strings    ${expect}    Hello RC18, This is Kushal
 
 TC3
     [Documentation]    validate given name is appending after string "Hello RC18, this is ____".(i.e: X=Shivam)
-    [Tags]    fea_5    req_11
+    [Tags]    Feature-5    req_11
     ${expect}    Func Name    Shivam
     Should Be Equal As Strings    ${expect}    Hello RC18, This is Shivam
 
 TC4
     [Documentation]    validate given name is appending after string "Hello RC18, this is ____".(i.e: X=Laxmi)
-    [Tags]    fea_5    req_11    RC18-95
+    [Tags]    Feature-5    req_11    RC18-95
     ${expect}    Func Name    Laxmi
     Should Be Equal As Strings    ${expect}    Hello RC18, This is Dinesh
 
 TC5
     [Documentation]    validate given name is appending after string "Hello RC18, this is ____".(i.e: X=Dinesh)
-    [Tags]    fea_5    req_11
+    [Tags]    Feature-5    req_11
     ${expect}    Func Name    Dinesh
     Should Be Equal As Strings    ${expect}    Hello RC18, This is Dinesh
 
 TC6
     [Documentation]    validate given name is appending after string "Hello RC18, this is ____".(i.e: X=Abdulla)
-    [Tags]    fea_5    req_11
+    [Tags]    Feature-5    req_11
     ${expect}    Func Name    Abdulla
     Should Be Equal As Strings    ${expect}    Hello RC18, This is Abdulla
 
 TC7
     [Documentation]    validate given number's Factorial is corect or not.(i.e: X=3)
-    [Tags]    fea_5    req_12
+    [Tags]    Feature-5    req_12
     ${expect}    Facto    3
     Should Be Equal As Strings    ${expect}    6
 
 TC8
     [Documentation]    validate given number's Factorial is corect or not.(i.e: X=0)
-    [Tags]    fea_5    req_12
+    [Tags]    Feature-5    req_12
     ${expect}    Facto    0
     Should Be Equal As Strings    ${expect}    The factorial of 0 is 1
 
 TC9
     [Documentation]    validate given number's Factorial is corect or not.(i.e: X=-1)
-    [Tags]    fea_5    req_12
+    [Tags]    Feature-5    req_12
     ${expect}    Facto    -1
     Should Be Equal As Strings    ${expect}    Sorry, factorial does not exist for negative numbers
 
 TC10
     [Documentation]    validate given number's Factorial is corect or not.(i.e: X=5)
-    [Tags]    fea_5    req_12    RC18-95
+    [Tags]    Feature-5    req_12    RC18-95
     ${expect}    Facto    5
     Should Be Equal As Strings    ${expect}    49
