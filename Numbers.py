@@ -10,6 +10,7 @@ def positive_or_negative_func(num = 0):
         type_of_num = "Negative number"
     return type_of_num
 
+
 #Python Program to Check if a Number is Odd or Even
 def odd_even_func(num = 0):
     type_of_num = ""
