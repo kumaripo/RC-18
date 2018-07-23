@@ -23,11 +23,10 @@ def get_sloc_attr():
 
 
 def parse_csv_file():
-    with open(args.file, 'rb') as fp:
+    with open(args.file, 'r') as fp:
         data_rows = []
         # parse file into csv module
         reader = csv.reader(fp)
-
         for row in reader:
             # if args.code_coverage is True and len(row) == 4:
             try:
@@ -49,7 +48,7 @@ def parse_csv_file():
 
 def main():
     rows = parse_csv_file()
-    print rows
+    print(rows)
     # if args.code_coverage is True:
     try:
        add_code_coverage(rows)
